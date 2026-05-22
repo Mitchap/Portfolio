@@ -167,7 +167,7 @@ rounded-full
 <section id="experience" class="pt-40">
 
     <!-- SECTION HEADER -->
-    <div class="flex flex-row items-center justify-center gap-2 md:gap-5 ms-40 md:ms-[50rem] mb-20 md:mb-40">
+    <div class="flex flex-row items-center justify-center gap-2 md:gap-5 ms-40 md:ms-[50rem] mb-10 md:mb-20">
         <div class="w-1 h-5 md:w-5 md:h-16 bg-[#ED1B24] -skew-x-24"></div>
         <h1 class="text-2xl md:text-[4rem] font-bold font-archivo uppercase">Experience</h1>
     </div>
@@ -218,8 +218,10 @@ rounded-full
 
         <div class="mb-10 text-center md:text-left">
             <h2 class="text-xl md:text-3xl font-bold uppercase">Power Platform Developer</h2>
+            
             <p class="text-neutral-500">
-                Ninja Tribe Solutions Inc. | Oct 2024 – Jan 2025
+                <span class="italic">Temporary deployment to Ninja Tribe Solutions Inc.</span> <br>
+                Coders Tribe IT Solutions | Oct 2024 – Jan 2025
             </p>
         </div>
 
