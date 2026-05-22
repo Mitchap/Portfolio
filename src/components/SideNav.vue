@@ -4,7 +4,7 @@
             <a href="#"><img src="/images/Mitch-Logo.jpg" alt="Mitch Barcenilla Logo" class="w-40" /></a>
             <div class="icon z-82">
                 <button type="button" @click="toggleSideNav"
-                    class="relative w-10 h-10 flex items-center justify-center">
+                    class="relative w-10 h-10 flex items-center justify-center cursor-pointer">
                     <transition name="icon-fade" mode="out-in">
                         <i v-if="mobileNav" key="xmark" class="fa-solid fa-xmark"></i>
                         <i v-else key="bars" class="fa-solid fa-bars"></i>
