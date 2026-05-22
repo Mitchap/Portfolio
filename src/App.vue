@@ -18,7 +18,7 @@ import Index from '@/pages/Index.vue';
     <div>
       <LoadingAnimation />
     </div>
-    <section class="pt-40 ">
+    <section>
       <Index />
     </section>
   </main>
