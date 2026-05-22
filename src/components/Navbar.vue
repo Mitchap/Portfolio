@@ -18,7 +18,7 @@
     <li ><a href="#about" class="hover-slider">About Me</a></li>
     <li ><a href="#experience" class="hover-slider">Experience</a></li>
     <li ><a href="#contact" class="hover-slider">Contact</a></li>
-    <li ><a href="#" class="hover-slider">Resume  <i class="fa-solid fa-arrow-up-right-from-square text-sm ms-1"></i></a></li>
+    <li ><a href="/files/Mitch_Barcenilla.pdf" class="hover-slider">Resume  <i class="fa-solid fa-arrow-up-right-from-square text-sm ms-1" download></i></a></li>
 </ul>
 </div>
     </nav>

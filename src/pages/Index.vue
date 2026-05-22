@@ -201,9 +201,11 @@ rounded-full
                     BantayPusta
                 </h3>
 
-                <p class="text-neutral-700 leading-6 text-sm md:text-md">
-                    Provided solution architecture and technical guidance for a production gambling-blocking and content management system deployed on Google Play Store. Defined system structure and supported implementation decisions across application components while coordinating with internal stakeholders and client representatives during final delivery phases.
-                </p>
+<ul class="text-neutral-700 text-sm md:text-md leading-6 list-disc pl-5 space-y-1">
+    <li>Provided solution architecture and technical guidance for a production gambling-blocking and content management system deployed on the Google Play Store</li>
+    <li>Defined system structure and supported implementation decisions across application components</li>
+    <li>Coordinated with internal stakeholders and client representatives during final delivery and stabilization phases</li>
+</ul>
             </div>
 
         </div>
@@ -235,10 +237,11 @@ rounded-full
                 <h3 class="text-xl md:text-[3rem] font-medium font-archivo mb-2">
                     CRM–ERP Integration Workflows
                 </h3>
-
-                <p class="text-neutral-700 leading-6 text-sm md:text-md">
-                    Developed and maintained Microsoft Power Automate workflows supporting CRM–ERP data synchronization for enterprise operations. Assisted in implementation, testing, and refinement of automation solutions, and coordinated with stakeholders to improve workflow logic, data syncing, and notification processes.
-                </p>
+<ul class="text-neutral-700 text-sm md:text-md leading-6 list-disc pl-5 space-y-1">
+    <li>Developed and maintained Microsoft Power Automate workflows supporting CRM–ERP data synchronization for enterprise operations</li>
+    <li>Assisted in implementation, testing, and refinement of automation solutions across business workflows</li>
+    <li>Coordinated with stakeholders to improve workflow logic, data synchronization, and notification processes</li>
+</ul>
             </div>
 
         </div>
@@ -271,9 +274,11 @@ rounded-full
                     TeacherTribe
                 </h3>
 
-<p class="text-neutral-700 leading-6 text-sm md:text-md">
-    Delivered technical training, mentorship, and software development support under an industry partnership with the Negros Occidental Language and Information Technology Center (NOLITC). Led the development of TeacherTribe, an internal web-based assessment system used during training operations, supporting structured exam delivery and training workflow processes.
-</p>
+<ul class="text-neutral-700 text-sm md:text-md leading-6 list-disc pl-5 space-y-1">
+    <li>Delivered technical training, mentorship, and software development support under an industry partnership with the Negros Occidental Language and Information Technology Center (NOLITC)</li>
+    <li>Led the development of TeacherTribe, an internal web-based assessment system used during training operations</li>
+    <li>Supported structured exam delivery and training workflow processes through system-based implementation and guidance</li>
+</ul>
             </div>
 
         </div>
