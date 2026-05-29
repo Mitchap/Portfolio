@@ -6,7 +6,6 @@
   class="h-[550px] md:h-[750px] bg-cover bg-center bg-no-repeat pt-28"
 >
 <div
-<div
 class="
 mx-auto
 mt-14
@@ -31,7 +30,7 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
 
     <div class="flex flex-col justify-center font-playfair-display font-bold uppercase">
 
-        <div class="flex flex-row w-50 justify-center me-[10rem] md:me-[50rem]">
+        <div class="flex flex-row w-50 justify-start">
             <p class="font-medium font-archivo text-sm md:text-xl text-neutral-800">
                 HEY! I'm
                 <span class="text-neutral-100 bg-[#C50000] px-2 py-1 ms-1 rounded-md">
@@ -89,36 +88,25 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
 
             <a
                 href="#about"
-
-class="
-uppercase
-
-bg-white/20
-border border-white/30
-
-backdrop-blur-md
-
-text-neutral-800
-font-semibold
-tracking-wide
-
-shadow-[0_8px_20px_rgba(0,0,0,0.15)]
-
-hover:bg-[#ED1B24]
-hover:border-[#ED1B24]
-hover:text-white
-
-transition-all duration-300 ease-in-out
-
-hover:shadow-[0_0_35px_rgba(237,27,36,0.45)]
-hover:scale-105
-
-px-6 py-2
-md:px-10 md:py-3
-
-rounded-full
-"
-                            >
+                class="
+                uppercase
+                bg-white/20
+                border border-white/30
+                backdrop-blur-md
+                text-neutral-800
+                font-semibold
+                tracking-wide
+                shadow-[0_8px_20px_rgba(0,0,0,0.15)]
+                hover:bg-[#ED1B24]
+                hover:border-[#ED1B24]
+                hover:text-white
+                transition-all duration-300 ease-in-out
+                hover:shadow-[0_0_35px_rgba(237,27,36,0.45)]
+                hover:scale-105
+                px-6 py-2
+                md:px-10 md:py-3
+                rounded-full
+                ">
                 Learn more about me
             </a>
 
@@ -127,13 +115,13 @@ rounded-full
 </div>
 </section>
     <!-- about me -->
-        <div class="flex flex-col justify-center text-center mt-20 md:mt-40">
+        <div class="flex flex-col justify-center text-center mt-5 md:mt-10">
             <i class="fa-solid fa-xmark text-[#ED1B24]"></i>
             <div class="h-10 md:h-20 w-0.5 bg-neutral-900 mx-auto mt-4 rounded"></div>
         </div>
 
 
-    <section id="about" class="flex justify-center pt-20 md:pt-40">
+    <section id="about" class="flex justify-center pt-16 md:pt-30">
 
         <div class="flex flex-col md:flex-row">
 
