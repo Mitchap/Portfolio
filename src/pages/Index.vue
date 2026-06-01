@@ -190,8 +190,8 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
                 </h3>
 
 <ul class="text-neutral-700 text-sm md:text-md leading-6 list-disc pl-5 space-y-1">
-    <li>Provided solution architecture and technical guidance for a production gambling-blocking and content management system deployed
-     on Microsoft Azure and distributed through the Google Play Store and Apple App Store.</li>
+    <li>Provided solution architecture and technical guidance for a production SaaS gambling-blocking
+         and content management system deployed on Microsoft Azure and distributed through the Google Play Store and Apple App Store.</li>
     <li>Defined system structure and supported implementation decisions across application components</li>
     <li>Coordinated with internal stakeholders and client representatives during final delivery and stabilization phases</li>
 </ul>
