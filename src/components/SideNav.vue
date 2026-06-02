@@ -22,7 +22,7 @@
                         <li><a @click="toggleSideNav" href="#experience" class="hover-slider">Experience</a></li>
                         <li><a @click="toggleSideNav" href="#contact" class="hover-slider">Contact</a></li>
                         <li>
-                            <a href="#" class="hover-slider">Resume
+                            <a href="/files/Mitch_Barcenilla.pdf" class="hover-slider">Resume
                                 <i class="fa-solid fa-arrow-up-right-from-square text-sm ms-1"></i></a>
                         </li>
                     </ul>
