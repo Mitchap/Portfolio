@@ -133,7 +133,7 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
                 <div class="mt-10 font-archivo text-lg w-56 md:w-96 leading-10">
                     <p class=""> I work across web design, software development, automation, and solution architecture, with a focus on building clear and user-friendly digital systems.
                         <br><br>
-                        Outside of work, I read novels, exercise, and brainstorm new ideas for my start up brand.
+                        Outside of work, I read novels, exercise, and brainstorm new ideas for my <a href="https://morsebit.vercel.app/" class="underline  transition  transition-duration-400 hover:text-blue-600">start up brand.</a>
                     </p>
                 </div>
             </div>
@@ -156,8 +156,8 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
 
     <!-- SECTION HEADER -->
     <div class="flex flex-row items-center justify-center gap-2 md:gap-5 ms-40 md:ms-[50rem] mb-10 md:mb-20">
-        <div class="w-1 h-5 md:w-5 md:h-16 bg-[#ED1B24] -skew-x-24"></div>
-        <h1 class="text-2xl md:text-[4rem] font-bold font-archivo uppercase">Experience</h1>
+        <div class="w-1 h-5 md:w-4 md:h-10 bg-[#ED1B24] -skew-x-24"></div>
+        <h1 class="text-2xl md:text-[3rem] font-bold font-archivo uppercase">Experience</h1>
     </div>
 
     <!-- ========================= -->
@@ -277,11 +277,138 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
 </div>
 </section>
 
+<!-- credentials -->
+<section id="credentials" class="pb-40 px-4 md:px-10">
+
+    <!-- section heading -->
+    <div
+        class="flex flex-row items-center justify-center md:justify-start md:ms-[10%] mb-20"
+    >
+        <h1 class="text-2xl md:text-[3rem] font-bold font-archivo uppercase">
+            credentials<span class="text-[#ED1B24] text-[4rem] md:text-[8rem]">.</span>
+        </h1>
+    </div>
+
+    <!-- cards container -->
+    <div class="flex flex-col items-center md:-ms-60 gap-40 md:gap-64">
+
+        <section
+            id="az900"
+            class="relative w-full max-w-[700px] aspect-[6/4]"
+        >
+            <!-- back card -->
+            <div
+                class="absolute inset-0 bg-neutral-200 shadow-[4px_4px_0px_#a1a1a1]"
+            >
+                <div class="flex justify-center">
+                    <p
+                        class="
+                            mt-6 md:mt-10
+                            font-archivo
+                            text-center
+                            text-xs md:text-xl
+                            uppercase
+                            px-4
+                            [word-spacing:0.4rem]
+                            md:[word-spacing:1rem]
+                        "
+                    >
+                        Microsoft Certified | Azure Fundamentals
+                    </p>
+                </div>
+            </div>
+
+            <!-- front card -->
+            <div
+              class="
+                absolute
+                top-[25%]
+                left-[10%] md:left-[20%]
+                w-[85%]
+                h-[85%]
+                md:w-[100%]
+                md:h-[100%]
+                bg-neutral-200
+                shadow-[-12px_-12px_5px_rgba(0,0,0,0.15)]
+              "
+            >
+                <a
+                    href="https://learn.microsoft.com/api/credentials/share/en-us/Mitch-0753/6C4A1110B6031A6?sharingId=68048B339D41CFFA"
+                    class="block w-full h-full"
+                    target="_blank"
+                >
+                    <img
+                        class="w-full h-full object-cover"
+                        src="/images/az900.jpg"
+                        alt="AZ900 Certificate"
+                    />
+                </a>
+            </div>
+        </section>
+
+        <section
+            id="csharp"
+            class="relative w-full max-w-[700px] aspect-[5/3]"
+        >
+            <!-- back card -->
+            <div
+                class="absolute inset-0 bg-neutral-200 shadow-[4px_4px_0px_#a1a1a1]"
+            >
+                <div class="flex justify-center">
+                    <p
+                        class="
+                            mt-6 md:mt-10
+                            font-archivo
+                            text-center
+                            text-xs md:text-xl
+                            uppercase
+                            px-4
+                            [word-spacing:0.4rem]
+                            md:[word-spacing:1rem]
+                        "
+                    >
+                        Foundational C# | Microsoft
+                    </p>
+                </div>
+            </div>
+
+            <!-- front card -->
+            <div
+              class="
+                absolute
+                top-[25%]
+                left-[10%] md:left-[20%]
+                w-[85%]
+                h-[85%]
+                md:w-[100%]
+                md:h-[100%]
+                bg-neutral-200
+                shadow-[-12px_-12px_5px_rgba(0,0,0,0.15)]
+              "
+            >
+                <a
+                    href="https://www.freecodecamp.org/certification/fcc5e741d3f-c12b-4078-ba73-10657908bc5a/foundational-c-sharp-with-microsoft"
+                    class="block w-full h-full"
+                    target="_blank"
+                >
+                    <img
+                        class="w-full h-full object-cover"
+                        src="/images/csharp.jpg"
+                        alt="Foundational C# Certificate"
+                    />
+                </a>
+            </div>
+        </section>
+
+    </div>
+    </section>
+
+
     <!-- contact me -->
-    <section id="contact" class="py-40">
+    <section id="contact" class="py-16 md:py-40">
         <div class="flex flex-col items-center justify-center me-40 md:me-[50rem] mb-20 md:mb-40">
-            <h1 class=" text-2xl md:text-[4rem] font-bold font-archivo uppercase">contact me</h1>
-            <div class="h-0.5 md:h-1 w-32 md:w-96 bg-[#ED1B24]"></div>
+            <h1 class=" text-2xl md:text-[3rem] font-bold font-archivo uppercase">contact me</h1>
+            <div class="h-0.5 md:h-1 w-32 md:w-80 bg-[#ED1B24]"></div>
             <div class="flex flex-row gap-5">
                 <p>+</p>
                 <p>+</p>
