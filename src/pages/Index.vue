@@ -92,18 +92,15 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
         class="
             btn-accent-glow
             uppercase
-            text-neutral-800
             font-semibold
             tracking-wide
             px-6 py-2
             md:px-10 md:py-3
             rounded-full
             shadow-[0_8px_20px_rgba(0,0,0,0.15)]
-            hover:scale-105
-            transition-transform duration-300 ease-in-out
         "
     >
-        <span>Learn more about me</span>
+        Learn more about me
     </a>
 
 </div>
@@ -466,111 +463,95 @@ const customVariants = {
 <style>
     
 
-.btn-accent-glow span {
-    position: relative;
-    z-index: 2;
 
-    display: flex;
+.btn-accent-glow {
+    --accent: #ED1B24;
+
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    width: 100%;
-    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid transparent;
+    color: #262626;
 
-    /* Removed padding: inherit */
-    border-radius: inherit;
-
-    background: var(--BG_color);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-}
-
-
-/* Button surface */
-.btn-accent-glow span {
-    position: relative;
-    z-index: 2;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-
-    padding: inherit;
-    border-radius: inherit;
-
-    background: var(--BG_color);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    text-decoration: none;
+    transition:
+        transform 300ms ease-in-out,
+        background-color 300ms ease-in-out,
+        color 300ms ease-in-out;
 }
 
 /* Animated border */
-.btn-accent-glow::before,
-.btn-accent-glow::after {
+.btn-accent-glow::before {
     content: "";
     position: absolute;
-
-    inset: -2px;
+    inset: -1px;
     border-radius: inherit;
+    padding: 2px;
 
     background: linear-gradient(
         120deg,
         #ED1B24,
         #8F1016,
-        #292929,
+        #333333,
         #ED1B24,
         #F65B61,
-        #8F1016,
         #ED1B24
     );
 
     background-size: 300% 300%;
     animation: accent-border-flow 6s linear infinite;
 
+    /* Cut out the center, leaving only the border */
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
     z-index: -1;
     pointer-events: none;
 }
 
-/* Soft outer glow */
+/* Outer glow */
 .btn-accent-glow::after {
-    filter: blur(14px);
-    opacity: 0.45;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+
+    background: var(--accent);
+    filter: blur(12px);
+    opacity: 0.18;
+
     z-index: -2;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
 }
 
-/* Hover state */
 .btn-accent-glow:hover {
+    background: var(--accent);
     color: #ffffff;
     transform: scale(1.05);
 }
 
-.btn-accent-glow:hover span {
-    background: #ED1B24;
-}
-
 .btn-accent-glow:hover::after {
-    opacity: 0.8;
-    filter: blur(20px);
+    opacity: 0.55;
 }
 
-/* Gradient movement */
 @keyframes accent-border-flow {
     0% {
         background-position: 0% 50%;
     }
 
-    50% {
-        background-position: 100% 50%;
-    }
-
     100% {
-        background-position: 0% 50%;
+        background-position: 300% 50%;
     }
 }
 
-/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
     .btn-accent-glow,
     .btn-accent-glow::before,
