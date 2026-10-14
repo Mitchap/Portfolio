@@ -84,33 +84,30 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
             From Escalante City, Philippines
         </h2>
 
-        <div class="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
 
-            <a
-                href="#about"
-                class="
-                uppercase
-                bg-white/20
-                border border-white/30
-                backdrop-blur-md
-                text-neutral-800
-                font-semibold
-                tracking-wide
-                shadow-[0_8px_20px_rgba(0,0,0,0.15)]
-                hover:bg-[#ED1B24]
-                hover:border-[#ED1B24]
-                hover:text-white
-                transition-all duration-300 ease-in-out
-                hover:shadow-[0_0_35px_rgba(237,27,36,0.45)]
-                hover:scale-105
-                px-6 py-2
-                md:px-10 md:py-3
-                rounded-full
-                ">
-                Learn more about me
-            </a>
+<div class="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
 
-        </div>
+    <a
+        href="#about"
+        class="
+            btn-accent-glow
+            uppercase
+            text-neutral-800
+            font-semibold
+            tracking-wide
+            px-6 py-2
+            md:px-10 md:py-3
+            rounded-full
+            shadow-[0_8px_20px_rgba(0,0,0,0.15)]
+            hover:scale-105
+            transition-transform duration-300 ease-in-out
+        "
+    >
+        <span>Learn more about me</span>
+    </a>
+
+</div>
+
     </div>
 </div>
 </section>
@@ -466,4 +463,123 @@ const customVariants = {
 
 </script>
 
-<style></style>
+<style>
+    
+.btn-accent-glow {
+    --BG_color: rgba(245, 245, 245, 0.88);
+    --accent: #ED1B24;
+    --color: #262626;
+
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    color: var(--color);
+
+    transition:
+        transform 300ms ease-in-out,
+        color 300ms ease-in-out;
+
+    z-index: 1;
+}
+
+/* Button surface */
+.btn-accent-glow span {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: inherit;
+    border-radius: inherit;
+
+    background: var(--BG_color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animated border */
+.btn-accent-glow::before,
+.btn-accent-glow::after {
+    content: "";
+    position: absolute;
+
+    inset: -2px;
+    border-radius: inherit;
+
+    background: linear-gradient(
+        120deg,
+        #ED1B24,
+        #8F1016,
+        #292929,
+        #ED1B24,
+        #F65B61,
+        #8F1016,
+        #ED1B24
+    );
+
+    background-size: 300% 300%;
+    animation: accent-border-flow 6s linear infinite;
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Soft outer glow */
+.btn-accent-glow::after {
+    filter: blur(14px);
+    opacity: 0.45;
+    z-index: -2;
+}
+
+/* Hover state */
+.btn-accent-glow:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.btn-accent-glow:hover span {
+    background: #ED1B24;
+}
+
+.btn-accent-glow:hover::after {
+    opacity: 0.8;
+    filter: blur(20px);
+}
+
+/* Gradient movement */
+@keyframes accent-border-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .btn-accent-glow,
+    .btn-accent-glow::before,
+    .btn-accent-glow::after {
+        animation: none;
+        transition: none;
+    }
+}
+
+</style>
