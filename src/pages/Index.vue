@@ -465,28 +465,26 @@ const customVariants = {
 
 <style>
     
-.btn-accent-glow {
-    --BG_color: rgba(245, 245, 245, 0.88);
-    --accent: #ED1B24;
-    --color: #262626;
 
+.btn-accent-glow span {
     position: relative;
-    isolation: isolate;
-    display: inline-flex;
+    z-index: 2;
+
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    background: transparent;
-    border: none;
-    text-decoration: none;
-    color: var(--color);
+    width: 100%;
+    height: 100%;
 
-    transition:
-        transform 300ms ease-in-out,
-        color 300ms ease-in-out;
+    /* Removed padding: inherit */
+    border-radius: inherit;
 
-    z-index: 1;
+    background: var(--BG_color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
+
 
 /* Button surface */
 .btn-accent-glow span {
