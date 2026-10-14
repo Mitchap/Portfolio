@@ -95,7 +95,7 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
             font-semibold
             tracking-wide
             px-6 py-2.5
-            md:px-10 md:py-3.5
+            md:px-12 md:py-6
             rounded-full
             shadow-[0_8px_20px_rgba(0,0,0,0.15)]
         "
