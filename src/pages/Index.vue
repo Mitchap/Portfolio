@@ -94,8 +94,8 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
             uppercase
             font-semibold
             tracking-wide
-            px-6 py-2
-            md:px-10 md:py-3
+            px-6 py-2.5
+            md:px-10 md:py-3.5
             rounded-full
             shadow-[0_8px_20px_rgba(0,0,0,0.15)]
         "
@@ -473,7 +473,7 @@ const customVariants = {
     align-items: center;
     justify-content: center;
 
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.65);
     border: 1px solid transparent;
     color: #262626;
 
@@ -525,7 +525,7 @@ const customVariants = {
 
     background: var(--accent);
     filter: blur(12px);
-    opacity: 0.18;
+    opacity: 0.10;
 
     z-index: -2;
     pointer-events: none;
@@ -533,13 +533,13 @@ const customVariants = {
 }
 
 .btn-accent-glow:hover {
-    background: var(--accent);
+    background: rgba(237, 27, 36, 0.85);
     color: #ffffff;
     transform: scale(1.05);
 }
 
 .btn-accent-glow:hover::after {
-    opacity: 0.55;
+    opacity: 0.35;
 }
 
 @keyframes accent-border-flow {
