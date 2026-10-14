@@ -99,9 +99,7 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)]
             rounded-full
             shadow-[0_8px_20px_rgba(0,0,0,0.15)]
         "
-    >
-        Learn more about me
-    </a>
+    >Learn more</a>
 
 </div>
 
